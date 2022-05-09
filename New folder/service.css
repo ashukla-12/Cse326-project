@@ -1,0 +1,48 @@
+a {
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5rem;
+    margin: 5vh 12vw;
+}
+
+.post {
+    min-height: 20vh;
+    text-align: center;
+    background: white;
+}
+.cover-img {
+    width: 50%;
+}
+
+.content {
+    padding: 5Srem;
+    text-align: justify;
+}
+.caption {
+    text-align: center;
+    margin: 2vh 4vw 2vh 4vw;
+    font-size: 5rem;
+    display: flex;
+    flex-flow: column;
+    font-style: italic;
+}
+
+
+.blog-content-description {
+    margin: 2vh 0 0 0;
+}
+
+@media screen and (max-width: 668px) {
+    .blog-grid-container {
+        grid-template-columns: auto auto;
+        margin: 5vh 15vw;
+    }
+
+    .post {
+            grid-column: 1 / span 2;
+    }
+}
